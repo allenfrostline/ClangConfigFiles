@@ -1,0 +1,19 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+AccessModifierOffset: -4
+AlignTrailingComments: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AlignArrayOfStructures : Left
+BasedOnStyle: Google
+BreakBeforeBinaryOperators: None
+ColumnLimit: 120
+IndentAccessModifiers: false
+IndentWidth: 4
+InsertBraces: false
+InsertTrailingCommas: Wrapped
+NamespaceIndentation: All
+SeparateDefinitionBlocks: Always
+SortIncludes: CaseInsensitive
+Standard: c++20
