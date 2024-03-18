@@ -1,3 +1,4 @@
 Diagnostics:
   Suppress:
     - google-objc-global-variable-declaration
+    - google-objc-function-naming
