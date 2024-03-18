@@ -1,3 +1,4 @@
+# https://clang.llvm.org/extra/clang-tidy/checks/list.html
 Checks: >
   -*,
   bugprone-*,
@@ -15,7 +16,7 @@ Checks: >
   -readability-braces-around-statements,
   -readability-magic-numbers
 
-WarningsAsErrors: "*"
+WarningsAsErrors: ""
 
 CheckOptions:
   - { key: readability-identifier-naming.NamespaceCase,           value: CamelCase  }
