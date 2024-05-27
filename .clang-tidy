@@ -1,20 +1,26 @@
 # https://clang.llvm.org/extra/clang-tidy/checks/list.html
+
+---
 Checks: >
   -*,
   bugprone-*,
+    -bugprone-easily-swappable-parameters,
   google-*,
+    -google-readability-namespace-comments,
+    -google-runtime-int,
+    -google-runtime-references,
   misc-*,
+    -misc-non-private-member-variables-in-classes,
+  clang-analyzer-*,
+  clang-diagnostics-*,
   modernize-*,
   performance-*,
   portability-*,
   readability-*,
-  -google-readability-namespace-comments,
-  -google-runtime-int,
-  -google-runtime-references,
-  -misc-non-private-member-variables-in-classes,
-  -readability-named-parameter,
-  -readability-braces-around-statements,
-  -readability-magic-numbers
+    -readability-named-parameter,
+    -readability-braces-around-statements,
+    -readability-magic-numbers,
+  -cppcoreguidelines-pro-bounds-constant-array-index
 
 WarningsAsErrors: ""
 
@@ -26,3 +32,4 @@ CheckOptions:
   - { key: readability-identifier-naming.FunctionCase,            value: lower_case }
   - { key: readability-identifier-naming.VariableCase,            value: lower_case }
   - { key: readability-identifier-naming.MacroDefinitionCase,     value: UPPER_CASE }
+...
